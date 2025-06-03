@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedules | Basketball Training</title>
+    <style>
+        :root {
+            --primary: #FF6F20;
+            --secondary: #101010;
+            --tertiary: #FFFFFF;
+            --section-bg: #F9F9F9;
+            --text: #101010;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--tertiary);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: var(--secondary);
+            padding: 1em;
+            text-align: left;
+        }
+        nav a {
+            color: var(--tertiary);
+            margin: 0 1em 0 0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+            padding: 0.3em 0.7em;
+            border-radius: 4px;
+            font-size: 1.15em;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+        nav a:hover {
+            color: var(--primary);
+            background: transparent;
+        }
+        nav a.promo-link {
+            background-color: var(--primary);
+            color: var(--tertiary);
+            box-shadow: 0 2px 6px rgba(255,111,32,0.6);
+        }
+        nav a.promo-link:hover {
+            background-color: #ff7f3a;
+            color: var(--tertiary);
+            box-shadow: 0 3px 8px rgba(255,111,32,0.8);
+        }
+        .site-header {
+            display: flex;
+            align-items: center;
+            background: var(--section-bg);
+            padding: 1em 2em;
+            color: var(--secondary);
+            border-bottom: 4px solid var(--primary);
+        }
+        .logo-link {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5em;
+            text-decoration: none;
+        }
+        .logo {
+            height: 70px;
+            width: auto;
+            display: block;
+            border-radius: 10px;
+            background: var(--tertiary);
+            padding: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .site-title h1 {
+            margin: 0 0 0.2em 0;
+            font-size: 2em;
+            color: var(--primary);
+        }
+        .site-title p {
+            margin: 0;
+            font-size: 1.1em;
+            color: var(--secondary);
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0 40px 0;
+        }
+        .center-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .schedule-img {
+            width: 350px;
+            max-width: 90vw;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: block;
+        }
+        footer {
+            background: var(--secondary);
+            color: var(--tertiary);
+            text-align: left;
+            padding: 1em 2em;
+            box-sizing: border-box;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 45px;
+            }
+            .site-title h1 {
+                font-size: 1.3em;
+            }
+            .schedule-img {
+                width: 98vw;
+            }
+            .site-header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedules</a>
+        <a href="promo.html" class="promo-link">Promo</a>
+    </nav>
+    <header>
+        <div class="site-header">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="CourtCraft Logo" class="logo">
+            </a>
+            <div class="site-title">
+                <h1>Schedules</h1>
+                <p>Check out our latest training schedule!</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="center-image">
+            <img src="images/schedule.png" alt="Training Schedules" class="schedule-img">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; CourtCraft</p>
+    </footer>
+</body>
+</html>

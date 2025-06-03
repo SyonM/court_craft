@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Promo | Basketball Training</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #101010;
+            background: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: #101010;
+            padding: 1.2em 2em;
+            text-align: left;
+        }
+        nav a {
+            color: #FFF;
+            margin-right: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.15em;
+            transition: color 0.2s, background-color 0.3s;
+            padding: 0.3em 0.7em;
+            border-radius: 4px;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+        nav a:hover {
+            color: #FF6F20;
+            background: transparent;
+        }
+        nav a.promo-link {
+            background-color: #FF6F20;
+            color: #FFF;
+            box-shadow: 0 2px 6px rgba(255,111,32,0.6);
+        }
+        nav a.promo-link:hover {
+            background-color: #ff7f3a;
+            color: #fff;
+            box-shadow: 0 3px 8px rgba(255,111,32,0.8);
+        }
+        .site-header {
+            display: flex;
+            align-items: center;
+            background: #F9F9F9;
+            padding: 1.5em 2em;
+            border-bottom: 4px solid #FF6F20;
+            color: #101010;
+        }
+        .logo-link {
+            display: flex;
+            align-items: center;
+            margin-right: 2em;
+            text-decoration: none;
+        }
+        .logo {
+            height: 90px;
+            width: auto;
+            border-radius: 14px;
+            background: #FFF;
+            padding: 6px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            display: block;
+        }
+        .site-title h1 {
+            margin: 0 0 0.2em 0;
+            font-size: 2.5em;
+            color: #FF6F20;
+        }
+        .site-title p {
+            margin: 0;
+            font-size: 1.3em;
+            color: #101010;
+        }
+        main {
+            flex: 1 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3vw;
+            align-items: center;
+            justify-items: center;
+            padding: 4vw 4vw 2vw 4vw;
+            box-sizing: border-box;
+            width: 100vw;
+            max-width: 100vw;
+        }
+        .promo-text {
+            font-size: 1.45em;
+            line-height: 1.7;
+            max-width: 700px;
+            color: #101010;
+        }
+        .promo-text p {
+            margin-bottom: 2em;
+            text-indent: 36px;
+        }
+        .promo-image {
+            width: 95%;
+            max-width: 600px;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            display: block;
+            object-fit: contain;
+        }
+        footer {
+            background: #101010;
+            color: #FFF;
+            text-align: left;
+            padding: 1.2em 2em;
+            font-size: 1.1em;
+            letter-spacing: 0.05em;
+            box-sizing: border-box;
+        }
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+                padding: 5vw 2vw 2vw 2vw;
+            }
+            .promo-image {
+                margin: 0 auto 2em auto;
+                max-width: 90vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 48px;
+                padding: 2px;
+            }
+            .site-title h1 {
+                font-size: 1.3em;
+            }
+            nav, footer {
+                padding: 1em;
+            }
+            .promo-text {
+                font-size: 1.05em;
+                text-indent: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedules</a>
+        <a href="promo.html" class="promo-link">Promo</a>
+    </nav>
+    <header>
+        <div class="site-header">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="CourtCraft Logo" class="logo" />
+            </a>
+            <div class="site-title">
+                <h1>Promo</h1>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="promo-text">
+            <p>
+                We understand that committing to basketball training can feel like a big step for families, especially when it comes to time and finances. That’s why we offer your very first session completely free. This no-obligation trial allows you and your child to experience our coaching style, supportive environment, and personalized training approach firsthand — with zero pressure or commitment.
+            </p>
+            <p>
+                Our free introductory session is designed to help your young athlete get comfortable on the court, learn some fundamental skills, and see how much fun basketball training can be. It’s the perfect way for families to try us out, ask questions, and decide if our program is the right fit — without any upfront cost.
+            </p>
+            <p>
+                We believe that every child deserves the chance to explore their potential in a welcoming, encouraging space. By offering this free session, we remove barriers and make it easier for families to take that first step toward developing skills, confidence, and a lifelong love of the game. Join us for your free session and see why so many families trust us to help their kids grow on and off the court.
+            </p>
+        </div>
+        <img src="images/promo.png" alt="Free Basketball Training Session" class="promo-image" />
+    </main>
+    <footer>
+        <p>&copy; CourtCraft</p>
+    </footer>
+</body>
+</html>

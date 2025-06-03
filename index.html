@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home | Basketball Training</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #101010;
+            background: #FFFFFF;
+        }
+        nav {
+            background: #101010;
+            padding: 1.2em 2em;
+            text-align: left;
+        }
+        nav a {
+            color: #FFF;
+            margin-right: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.15em;
+            transition: color 0.2s;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+        nav a:hover {
+            color: #FF6F20;
+        }
+        nav a.promo-link {
+            background-color: #FF6F20;
+            color: #FFF;
+            padding: 0.3em 0.7em;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(255,111,32,0.6);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        nav a.promo-link:hover {
+            background-color: #ff7f3a;
+            box-shadow: 0 3px 8px rgba(255,111,32,0.8);
+        }
+        .site-header {
+            display: flex;
+            align-items: center;
+            background: #F9F9F9;
+            padding: 1.5em 2em;
+            border-bottom: 4px solid #FF6F20;
+            color: #101010;
+        }
+        .logo-link {
+            display: flex;
+            align-items: center;
+            margin-right: 2em;
+            text-decoration: none;
+        }
+        .logo {
+            height: 90px;
+            width: auto;
+            border-radius: 14px;
+            background: #FFF;
+            padding: 6px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            display: block;
+        }
+        .site-title h1 {
+            margin: 0 0 0.2em 0;
+            font-size: 2.5em;
+            color: #FF6F20;
+        }
+        .site-title p {
+            margin: 0;
+            font-size: 1.3em;
+            color: #101010;
+        }
+        main {
+            flex-grow: 1; /* This allows main to expand and push footer down */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1100px;
+            margin: 2em auto 4em auto;
+            padding: 0 2em;
+            gap: 3em;
+            align-items: center;
+        }
+        .text-content {
+            font-size: 1.45em;
+            line-height: 1.7;
+            color: #101010;
+        }
+        .text-content h2 {
+            font-size: 1.875em;
+            margin-bottom: 0.5em;
+            color: #FF6F20;
+        }
+        .text-content p {
+            margin-bottom: 2em;
+            text-indent: 36px;
+        }
+        .image-content img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background: #101010;
+            color: #FFF;
+            text-align: left;
+            padding: 1.2em 2em;
+            font-size: 1.1em;
+            letter-spacing: 0.05em;
+            box-sizing: border-box;
+            margin-top: auto; /* Push footer to bottom when content is short */
+        }
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+                padding: 0 1em;
+            }
+            .image-content img {
+                max-width: 90vw;
+                margin-bottom: 2em;
+            }
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 48px;
+                padding: 2px;
+            }
+            .site-title h1 {
+                font-size: 1.3em;
+            }
+            .text-content h2 {
+                font-size: 1.4em;
+            }
+            .text-content p {
+                font-size: 1.1em;
+                text-indent: 24px;
+            }
+            nav, footer {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedules</a>
+        <a href="promo.html" class="promo-link">Promo</a>
+    </nav>
+    <header>
+        <div class="site-header">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="CourtCraft Logo" class="logo" />
+            </a>
+            <div class="site-title">
+                <h1>CourtCraft</h1>
+                <p>Unlock your full potential on the court!</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="text-content">
+            <h2>Why Train With Us?</h2>
+            <p>
+                We are a group of dedicated teens who play competitive AAU basketball, and we understand firsthand the challenges and excitement that come with the game. More than just players, we are mentors and role models who are passionate about sharing our knowledge and experience with younger children eager to learn and improve. Our mission is to create a supportive environment where young athletes can develop their skills, build confidence, and fall in love with basketball just as deeply as we have.
+            </p>
+            <p>
+                Having walked the same path ourselves, we know how valuable guidance from peers who truly understand the game can be. We don’t just teach drills or plays — we teach the mindset, work ethic, and passion that basketball demands. Through patient mentorship, encouragement, and personalized coaching, we help younger players overcome obstacles, embrace challenges, and unlock their full potential both on and off the court. Our commitment goes beyond basketball skills; we aim to inspire leadership, teamwork, and resilience that will serve them for life.
+            </p>
+            <p>
+                Basketball is more than a sport to us — it’s a community and a way of life. By training with us, younger athletes gain access to honest advice, practical tips, and real-world experience from players who compete at a high level. We believe that every child deserves the opportunity to grow in a positive, motivating environment where their love for the game can flourish. Together, we work hard, celebrate progress, and build a foundation for success that extends far beyond the court.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="images/picture.png" alt="Basketball Training" />
+        </div>
+    </main>
+    <footer>
+        <p>&copy; CourtCraft</p>
+    </footer>
+</body>
+</html>
